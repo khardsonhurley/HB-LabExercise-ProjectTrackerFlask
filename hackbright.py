@@ -5,7 +5,7 @@ projects, and the grades students receive in class projects.
 """
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
-
+import hackbright
 
 db = SQLAlchemy()
 
