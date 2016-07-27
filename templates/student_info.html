@@ -6,6 +6,15 @@
 <body>
 <h1>{{ first }} {{ last }}</h1>
 
-<p>GitHub Account: {{ github }}</p>
+<p><b>GitHub Account:</b> {{ github }}</p>
+
+<p> 
+    <h2>Project Info</h2>
+    <ul>
+        {% for project_tuple in grades %}
+            <li> <b>Project:</b> {{ project_tuple[0]}} <b>Grade:</b> {{ project_tuple[1]}} </li>
+        {% endfor %}
+    </ul>
+</p>
 </body>
 </html>

@@ -40,7 +40,9 @@ def make_new_student(first_name, last_name, github):
     database and print a confirmation message.
     """
 
-    QUERY = """INSERT INTO Students VALUES (:first_name, :last_name, :github)"""
+    QUERY = """
+            INSERT INTO Students VALUES (:first_name, :last_name, :github)
+            """
     db_cursor = db.session.execute(QUERY, {'first_name': first_name,
                                            'last_name': last_name,
                                            'github': github})
